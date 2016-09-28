@@ -52,8 +52,8 @@ public class BallPanel extends JPanel {
     /**
      * Add ball to arraylist
      */
-    public static void addBall() {
-        BallThread ballThread = new BallThread(dimension);
+    public static void addBall(Color color) {
+        BallThread ballThread = new BallThread(dimension, color);
         threadsList.add(ballThread);
         ballThread.start();
     }

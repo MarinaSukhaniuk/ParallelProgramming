@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d7e8e21-07b7-4163-bfa0-3566d6f4e7e6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BallPanel.class" afterPath="$PROJECT_DIR$/target/classes/BallPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BallSimple.class" afterPath="$PROJECT_DIR$/target/classes/BallSimple.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BounceFrame.class" afterPath="$PROJECT_DIR$/target/classes/BounceFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BallThread.class" afterPath="$PROJECT_DIR$/target/classes/BallThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Ball.java" afterPath="$PROJECT_DIR$/src/main/java/Ball.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BallPanel.java" afterPath="$PROJECT_DIR$/src/main/java/BallPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BallSimple.java" afterPath="$PROJECT_DIR$/src/main/java/BallSimple.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BallThread.java" afterPath="$PROJECT_DIR$/src/main/java/BallThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BounceFrame.java" afterPath="$PROJECT_DIR$/src/main/java/BounceFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SubPanel.java" afterPath="$PROJECT_DIR$/src/main/java/SubPanel.java" />
     </list>
     <ignored path="lab1_pararel_programming.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +38,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BallPanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ball.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Ball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BallPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BallPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            <state relative-caret-position="159">
+              <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,14 +63,30 @@
       <file leaf-file-name="BallThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BallThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            <state relative-caret-position="141">
+              <caret line="11" column="91" selection-start-line="11" selection-start-column="91" selection-end-line="11" selection-end-column="91" />
               <folding>
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#953#954#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SubPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+              <folding>
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#970#971#0" expanded="true" />
+                <element signature="e#1237#1238#0" expanded="true" />
+                <element signature="e#1299#1300#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,12 +123,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/DownPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SubPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/BallSimple.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Ball.java" />
         <option value="$PROJECT_DIR$/src/main/java/BounceFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Ball.java" />
         <option value="$PROJECT_DIR$/src/main/java/BallThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/BallPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SubPanel.java" />
       </list>
     </option>
   </component>
@@ -680,12 +703,20 @@
       <workItem from="1474813306910" duration="143000" />
       <workItem from="1475081093435" duration="4382000" />
       <workItem from="1475088808871" duration="2974000" />
-      <workItem from="1475093441023" duration="4852000" />
+      <workItem from="1475093441023" duration="5177000" />
     </task>
+    <task id="LOCAL-00001" summary="added threads">
+      <created>1475098309638</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1475098309638</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30030000" />
+    <option name="totallyTimeSpent" value="30355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
@@ -729,6 +760,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added threads" />
+    <option name="LAST_COMMIT_MESSAGE" value="added threads" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="60" />
@@ -752,8 +787,10 @@
         <state relative-caret-position="810">
           <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
           <folding>
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -797,8 +834,10 @@
         <state relative-caret-position="884">
           <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
           <folding>
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -842,8 +881,10 @@
         <state relative-caret-position="935">
           <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
           <folding>
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -887,8 +928,10 @@
         <state relative-caret-position="935">
           <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
           <folding>
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -932,8 +975,10 @@
         <state relative-caret-position="935">
           <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
           <folding>
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -975,8 +1020,10 @@
         <state relative-caret-position="680">
           <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
           <folding>
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1004,8 +1051,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding>
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1041,8 +1090,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
           <folding>
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1092,30 +1143,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SubPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-          <folding>
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BounceFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BallThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="11" column="91" selection-start-line="11" selection-start-column="91" selection-end-line="11" selection-end-column="91" />
+          <folding>
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,26 +1182,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BallThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BallPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state relative-caret-position="159">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
           <folding>
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BallPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SubPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        <state relative-caret-position="197">
+          <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
           </folding>
         </state>
       </provider>

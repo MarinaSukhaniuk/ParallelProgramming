@@ -14,6 +14,7 @@ public class SubPanel extends JPanel {
         this.sleeptimeLabel = addLabeltime();
         this.setBackground(Color.PINK);
         this.add(addBtnAdd());
+        this.add(addBtrRed());
         this.add(this.scoreLabel);
         this.add(this.sleeptimeLabel);
         this.setPreferredSize(dm);
@@ -26,11 +27,22 @@ public class SubPanel extends JPanel {
      * @return button
      */
     private JButton addBtnAdd() {
-        JButton button = new JButton("Add new ball");
+        JButton button = new JButton("Add red ball");
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                BallPanel.addBall();
+                BallPanel.addBall(Color.RED);
+            }
+        });
+        return button;
+    }
+
+    private JButton addBtrRed() {
+        JButton button = new JButton("Add green ball");
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                BallPanel.addBall(Color.GREEN);
             }
         });
         return button;

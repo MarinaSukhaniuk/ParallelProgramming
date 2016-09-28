@@ -8,8 +8,8 @@ public class BallThread extends Thread {
     private Ball ball;
     private Dimension dimension;
 
-    public BallThread(Dimension dimension) {
-        this.ball = new Ball((int) dimension.getWidth(), (int) dimension.getHeight());
+    public BallThread(Dimension dimension, Color color) {
+        this.ball = new Ball((int) dimension.getWidth(), (int) dimension.getHeight(), color);
         this.dimension = dimension;
     }
 

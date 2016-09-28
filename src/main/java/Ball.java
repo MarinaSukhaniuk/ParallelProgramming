@@ -11,12 +11,14 @@ public class Ball {
     private int y = 0;
     private int dx = 2;
     private int dy = 2;
+    private Color color;
 
-    public Ball(int frameWidth, int frameHeight) {
+    public Ball(int frameWidth, int frameHeight, Color color) {
         this.frameWidth = frameWidth;
         this.frameHeight = frameHeight;
         x = 150;
         y = 150;
+        this.color = color;
     }
 
     /**
@@ -25,7 +27,7 @@ public class Ball {
      * @param g2 graphics
      */
     public void draw(Graphics2D g2) {
-        g2.setColor(Color.darkGray);
+        g2.setColor(color);
         g2.fill(new Ellipse2D.Double(x, y, XSIZE, YSIZE));
     }
 
