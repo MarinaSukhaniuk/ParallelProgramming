@@ -77,4 +77,8 @@ public class Ball {
         }
         return false;
     }
+
+    public Color getColor() {
+        return color;
+    }
 }

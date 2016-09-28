@@ -10,6 +10,11 @@ public class BallThread extends Thread {
 
     public BallThread(Dimension dimension, Color color) {
         this.ball = new Ball((int) dimension.getWidth(), (int) dimension.getHeight(), color);
+        if(ball.getColor() == Color.RED){
+            this.setPriority(8);
+        }else {
+            this.setPriority(5);
+        }
         this.dimension = dimension;
     }
 
