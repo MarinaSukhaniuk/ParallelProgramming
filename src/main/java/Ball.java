@@ -4,7 +4,7 @@ import java.awt.geom.Ellipse2D;
 public class Ball {
     private final int frameHeight;
     private final int frameWidth;
-    private  Component canvas;
+    private Component canvas;
     private static final int XSIZE = 20;
     private static final int YSIZE = 20;
     private int x = 0;
@@ -15,9 +15,8 @@ public class Ball {
     public Ball(int frameWidth, int frameHeight) {
         this.frameWidth = frameWidth;
         this.frameHeight = frameHeight;
-        x = 20;
-        y = 20;
-
+        x = 150;
+        y = 150;
     }
 
     /**
@@ -58,5 +57,22 @@ public class Ball {
             done = true;
         }
         return done;
+    }
+
+    //Check if ball hit to lose
+    public boolean toLose() {
+        if (BallPanel.l1.intersects(x, y, XSIZE, YSIZE)) {
+            return true;
+        }
+        if (BallPanel.l2.intersects(x, y, XSIZE, YSIZE)) {
+            return true;
+        }
+        if (BallPanel.l3.intersects(x, y, XSIZE, YSIZE)) {
+            return true;
+        }
+        if (BallPanel.l4.intersects(x, y, XSIZE, YSIZE)) {
+            return true;
+        }
+        return false;
     }
 }
