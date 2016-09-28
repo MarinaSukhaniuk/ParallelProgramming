@@ -31,12 +31,14 @@ public class BallPanel extends JPanel {
         this.l4 = new Ellipse2D.Double((int) dimension.getWidth() - 35, (int) dimension.getHeight() - 20, 35, 35);
         this.repaint();
     }
+
     /**
      * Move all ball
      */
-     synchronized public void move(long sleeptime, Ball ball) {
-        if (ball.move()) {
-            increase(sleeptime);
+    synchronized public void move(long sleeptime, Ball ball) {
+        ball.move();
+        if (ball.toLose()) {
+            increase();
         }
         this.repaint();
     }
@@ -45,8 +47,8 @@ public class BallPanel extends JPanel {
     /**
      * Increase score label
      */
-    public void increase(long sleeptime) {
-        subpanel.increaseScore(sleeptime);
+    public void increase() {
+        subpanel.increaseScore();
     }
 
     /**

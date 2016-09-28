@@ -5,18 +5,15 @@ import java.awt.event.ActionListener;
 
 public class SubPanel extends JPanel {
     private JLabel scoreLabel;
-    private JLabel sleeptimeLabel;
     private int score;
 
     public SubPanel(Dimension dm) {
         score = 0;
         this.scoreLabel = addLabel();
-        this.sleeptimeLabel = addLabeltime();
         this.setBackground(Color.PINK);
         this.add(addBtnAdd());
         this.add(addBtrRed());
         this.add(this.scoreLabel);
-        this.add(this.sleeptimeLabel);
         this.setPreferredSize(dm);
 
     }
@@ -67,9 +64,8 @@ public class SubPanel extends JPanel {
     /**
      * Increase score scoreLabel
      */
-    public void increaseScore(long sleeptime) {
+    public void increaseScore() {
         score++;
         this.scoreLabel.setText("You score: " + String.valueOf(score));
-        this.sleeptimeLabel.setText("Your sleeptime: "+sleeptime);
     }
 }

@@ -7,6 +7,10 @@ public class BallThread extends Thread {
     private boolean work = true;
     private Ball ball;
     private Dimension dimension;
+    private long sleeptime;
+    private long timeStart;
+    //time division
+    private static final int moveDiv = 200;
 
     public BallThread(Dimension dimension, Color color) {
         this.ball = new Ball((int) dimension.getWidth(), (int) dimension.getHeight(), color);
@@ -15,7 +19,9 @@ public class BallThread extends Thread {
         }else {
             this.setPriority(5);
         }
+        sleeptime = 5;
         this.dimension = dimension;
+        this.timeStart = System.currentTimeMillis();
     }
 
     @Override
@@ -26,12 +32,29 @@ public class BallThread extends Thread {
                 return;
             }
             try {
-                Thread.sleep(3);
+                Thread.sleep(sleeptime);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
             BounceFrame.getBallPanel().move(50, ball);
+            generateTime(timeStart);
         }
+    }
+
+    /**
+     * Slow balls
+     *
+     * @param startTimeStamp program start time
+     * @return thread sleep time
+     */
+    private long generateTime(long startTimeStamp) {
+        long currentMillis = System.currentTimeMillis();
+        long result = (currentMillis - startTimeStamp) / moveDiv;
+        if (result > 1){
+            sleeptime++;
+            timeStart = System.currentTimeMillis();
+        }
+         return result;
     }
 
     public Ball getBall() {
