@@ -4,7 +4,7 @@ import java.awt.geom.Ellipse2D;
 import java.util.ArrayList;
 
 public class BallPanel extends JPanel {
-    private static ArrayList<Ball> balls = new ArrayList();
+    public static volatile ArrayList<BallThread> threadsList = new ArrayList<>();
     private SubPanel subpanel;
     private static Dimension dimension;
     private final int BOTTOM_PANE = 40;
@@ -23,7 +23,7 @@ public class BallPanel extends JPanel {
         this.add(subpanel, BorderLayout.SOUTH);
         dm.setSize(dm.getWidth(), dm.getHeight() - 2 * BOTTOM_PANE);
         this.dimension = dm;
-        balls.add(new Ball((int) dimension.getWidth(), (int) dimension.getHeight()));
+        //balls.add(new Ball((int) dimension.getWidth(), (int) dimension.getHeight()));
 
         this.l1 = new Ellipse2D.Double(0, (int) dimension.getHeight() - 20, 35, 35);
         this.l2 = new Ellipse2D.Double((int) (dimension.getWidth() - 35), 0, 35, 35);
@@ -31,22 +31,12 @@ public class BallPanel extends JPanel {
         this.l4 = new Ellipse2D.Double((int) dimension.getWidth() - 35, (int) dimension.getHeight() - 20, 35, 35);
         this.repaint();
     }
-
-    public static void removeBall(){
-
-    }
-
     /**
      * Move all ball
      */
-    synchronized public void move(long sleeptime) {
-        for (int i = 0; i < balls.size(); i++) {
-            if (balls.get(i).move()) {
-                increase(sleeptime);
-            }
-            if(balls.get(i).toLose()){
-                balls.remove(i);
-            }
+     synchronized public void move(long sleeptime, Ball ball) {
+        if (ball.move()) {
+            increase(sleeptime);
         }
         this.repaint();
     }
@@ -63,20 +53,22 @@ public class BallPanel extends JPanel {
      * Add ball to arraylist
      */
     public static void addBall() {
-        balls.add(new Ball((int) dimension.getWidth(), (int) dimension.getHeight()));
+        BallThread ballThread = new BallThread(dimension);
+        threadsList.add(ballThread);
+        ballThread.start();
     }
 
-    public void add(Ball b) {
-        this.balls.add(b);
-    }
 
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         drawLuse(g);
-        Graphics2D g2 = (Graphics2D) g;
-        for (Ball bal : balls) {
-            bal.draw(g2);
+        for (int i = 0; i < threadsList.size(); i++) {
+            if (threadsList.get(i).isWork()) {
+                threadsList.get(i).getBall().draw((Graphics2D) g);
+            } else {
+                threadsList.remove(i);
+            }
         }
     }
 

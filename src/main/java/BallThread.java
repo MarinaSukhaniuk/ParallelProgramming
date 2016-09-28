@@ -1,27 +1,43 @@
+import java.awt.*;
+
 /**
  * Created by Marina on 28.09.2016.
  */
 public class BallThread extends Thread {
-    private Ball b;
+    private boolean work = true;
+    private Ball ball;
+    private Dimension dimension;
 
-    public BallThread(Ball ball){
-        b = ball;
+    public BallThread(Dimension dimension) {
+        this.ball = new Ball((int) dimension.getWidth(), (int) dimension.getHeight());
+        this.dimension = dimension;
     }
 
     @Override
-    public void run(){
-        try{
-            for(int i=1; i<10000; i++){
-                b.move();
-                System.out.println("Thread name = "
-                        + Thread.currentThread().getName());
-                Thread.sleep(5);
-
+    public void run() {
+        while (work) {
+            if(ball.toLose()){
+                work=false;
+                return;
             }
-        } catch(InterruptedException ex){
-
+            try {
+                Thread.sleep(3);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            BounceFrame.getBallPanel().move(50, ball);
         }
-
     }
 
+    public Ball getBall() {
+        return ball;
+    }
+
+    public boolean isWork() {
+        return work;
+    }
+
+    public void setWork(boolean work) {
+        this.work = work;
+    }
 }

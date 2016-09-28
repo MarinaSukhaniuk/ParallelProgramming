@@ -3,7 +3,7 @@ import java.awt.*;
 
 public class BounceFrame extends JFrame {
 
-    private BallPanel ballPanel;
+    private static BallPanel ballPanel;
     private boolean stopMove = false;
     public static final int WIDTH = 450;
     public static final int HEIGHT = 350;
@@ -28,30 +28,6 @@ public class BounceFrame extends JFrame {
     }
 
     /**
-     * Start game
-     */
-    public void simulate() {
-
-        Ball ball = new Ball(getWidth(), getHeight());
-        ballPanel.addBall();
-        Thread thread = new BallThread(ball);
-
-        System.out.println("Thread name = " + thread.getName());
-
-        long start = System.currentTimeMillis();
-        while (true && !stopMove) {
-            long sleepTime = generateTime(start);
-            ballPanel.move(sleepTime);
-            //thread.start();
-            try {
-                Thread.sleep(sleepTime);
-            } catch (InterruptedException ex) {
-                System.out.println(ex);
-            }
-        }
-    }
-
-    /**
      * Slow balls
      *
      * @param startTimeStamp program start time
@@ -61,5 +37,9 @@ public class BounceFrame extends JFrame {
         long currentMillis = System.currentTimeMillis();
         long result = (currentMillis - startTimeStamp) / moveDiv;
         return result;
+    }
+
+    public static BallPanel getBallPanel() {
+        return ballPanel;
     }
 }

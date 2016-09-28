@@ -6,7 +6,7 @@ public class BallSimple {
         BounceFrame frame = new BounceFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
-        frame.simulate();
+        //frame.simulate();
         System.out.println("Thread name = " + Thread.currentThread().getName());
     }
 
